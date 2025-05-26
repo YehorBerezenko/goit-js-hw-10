@@ -47,6 +47,7 @@ startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
   startBtn.disabled = true; 
+  inputEl.disabled = true;
 
   countdownInterval = setInterval(() => {
     const now = new Date();
